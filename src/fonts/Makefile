@@ -3,11 +3,11 @@ build: gzipped_psf_fonts
 %.gz: %
 	gzip -9 <$< >$@
 
-Lat15-TomThumb4x6.psf: bdf = tom-thumb.bdf
-Lat15-TomThumb4x6.psf: fontset = Lat15.256
-Lat15-TomThumb4x6.psf: size = 256
+Cyr-TomThumb4x6.psf: bdf = tom-thumb.bdf
+Cyr-TomThumb4x6.psf: fontset = CyrSlav.256
+Cyr-TomThumb4x6.psf: size = 256
 
-PSF_FONTS=Lat15-TomThumb4x6.psf
+PSF_FONTS=Cyr-TomThumb4x6.psf
 
 GZIPPED_PSF_FONTS=$(addsuffix .gz, $(PSF_FONTS))
 gzipped_psf_fonts: $(GZIPPED_PSF_FONTS)
